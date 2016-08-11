@@ -52,8 +52,8 @@ closures for being called and setting a closure will overwrite the delegate prop
 /**
  An enum that will represent either a location or an error with corresponding associated values.
 
- - Location A location
- - Error    An error
+ - Location A location as reported by Core Location.
+ - Error    An error coming from Core Location, for example when location service usage is denied.
  */
 public enum LKLocationOrError {
     case Location(CLLocation)
