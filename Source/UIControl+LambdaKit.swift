@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  UIControl+LamdaKit.swift
 //  Created by Martin Conte Mac Donell on 3/31/15.
@@ -44,7 +45,7 @@ private final class ControlWrapper {
     }
 }
 
-/** 
+/**
 Closure control event handling for UIControl.
 
 Example:
@@ -69,7 +70,7 @@ extension UIControl {
         }
     }
 
-    /** 
+    /**
     Adds a closure for a particular event to an internal dispatch table.
 
     :param: controlEvents A bitmask specifying the control events for which the action message is sent.
@@ -107,3 +108,4 @@ extension UIControl {
         }
     }
 }
+#endif

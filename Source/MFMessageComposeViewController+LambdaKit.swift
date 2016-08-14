@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  MFMessageComposeViewController+LambdaKit.swift
 //  Created by Martin Conte Mac Donell on 3/31/15.
@@ -96,3 +97,4 @@ private final class ClosureWrapper {
         self.handler = handler
     }
 }
+#endif

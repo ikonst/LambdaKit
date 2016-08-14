@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  UIBarButtonItem+LamdaKit.swift
 //  Created by Martin Conte Mac Donell on 3/31/15.
@@ -30,7 +31,7 @@ public typealias LKBarButtonHandler = (sender: UIBarButtonItem) -> Void
 // A global var to produce a unique address for the assoc object handle
 private var associatedEventHandle: UInt8 = 0
 
-/** 
+/**
 Closure event initialization for UIBarButtonItem.
 
 Example:
@@ -86,3 +87,4 @@ private final class ClosureWrapper {
         self.handler = handler
     }
 }
+#endif

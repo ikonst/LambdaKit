@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  AVAudioPlayer+LambdaKit.swift
 //  Created by Matias Pequeno on 9/23/15.
@@ -104,3 +105,4 @@ private final class ClosuresWrapper {
     private var didFinishPlaying: LKDidFinishPlayingClosure?
     private var decodeErrorDidOccur: LKDecodeErrorDidOccurClosure?
 }
+#endif

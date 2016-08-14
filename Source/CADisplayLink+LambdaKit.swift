@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  CADisplayLink+LambdaKit.swift
 //  Created by Martin Conte Mac Donell on 4/7/15.
@@ -54,7 +55,7 @@ extension CADisplayLink {
     }
 
     /**
-    Creates a DisplayLink and add it to the main run loop. The displayLink will execute for the given 
+    Creates a DisplayLink and add it to the main run loop. The displayLink will execute for the given
     duration in seconds.
 
     :param: duration The duration in seconds.
@@ -98,3 +99,4 @@ private final class ClosuresWrapper {
         self.duration = duration
     }
 }
+#endif

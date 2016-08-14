@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  UIGestureRecognizer+LamdaKit.swift
 //  Created by Martin Conte Mac Donell on 3/31/15.
@@ -32,7 +33,7 @@ private var associatedEventHandle: UInt8 = 0
 /**
 Closure functionality for UIGestureRecognizer.
 
-Example: 
+Example:
 
 ```swift
 let doubleTap = UITapGestureRecognizer { gesture, state in
@@ -56,7 +57,7 @@ extension UIGestureRecognizer {
     }
 
     /**
-    Initializes an allocated gesture recognizer that will call the given closure when the gesture is 
+    Initializes an allocated gesture recognizer that will call the given closure when the gesture is
     recognized.
 
     An alternative to the designated initializer.
@@ -87,3 +88,4 @@ private final class GestureClosureWrapper {
         self.handler = handler
     }
 }
+#endif

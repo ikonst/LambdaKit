@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  UIWebView+LamdaKit.swift
 //  Created by Martin Conte Mac Donell on 3/31/15.
@@ -134,3 +135,4 @@ private final class ClosuresWrapper {
     private var didFinishLoad: LKDidFinishLoadClosure?
     private var didFinishWithError: LKDidFinishWithErrorClosure?
 }
+#endif

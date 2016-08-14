@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  UIImagePickerController+LamdaKit.swift
 //  Created by Martin Conte Mac Donell on 3/31/15.
@@ -41,7 +42,7 @@ let picker = UIImagePickerController()
 picker.didCancel = { picker in
     println("DID CANCEL! \(picker)")
 }
-picker.didFinishPickingMedia = { picker, media in 
+picker.didFinishPickingMedia = { picker, media in
     println("Media: \(media[UIImagePickerControllerEditedImage])")
 }
 self.presentViewController(picker, animated: true, completion: nil)
@@ -98,3 +99,4 @@ private final class ClosuresWrapper {
     private var didFinishPickingMedia: LKFinishPickingMediaClosure?
     private var didCancel: LKCancelClosure?
 }
+#endif

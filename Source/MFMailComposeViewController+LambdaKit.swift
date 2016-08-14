@@ -1,3 +1,4 @@
+#if os(iOS)
 //
 //  MFMailComposeViewController+LamdaKit.swift
 //  Created by Martin Conte Mac Donell on 3/31/15.
@@ -59,11 +60,11 @@ extension MFMailComposeViewController: MFMailComposeViewControllerDelegate {
         }
     }
 
-    /** 
+    /**
     Creates an instance of MFMailComposeViewController and sets the completion closure to be used instead
     of the delegate. This closure is an analog for the
     mailComposeController:didFinishWithResult:error: method of MFMailComposeViewControllerDelegate.
-    
+
     :param: completion A closure analog to mailComposeController:didFinishWithResult:error:
 
     :returns: an initialized instance of MFMailComposeViewController.
@@ -97,3 +98,4 @@ private final class ClosureWrapper {
         self.handler = handler
     }
 }
+#endif
